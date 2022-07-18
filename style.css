@@ -1,5 +1,72 @@
+:root {
+    --blue: #0A0C19;
+    --blue-vaiolate: #1B1938;
+    --purple: #AA5CDB;
+    --primary-font: 'Inter',
+        sans-serif;
+    --primary-font-color: #ffff;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+
+}
+
+.card {
+    height: 60vh;
+    width: 70%;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-text {
+    height: 100%;
+    width: 50%;
+    background-color: var(--blue-vaiolate);
+    font-family: var(--primary-font);
+    color: var(--primary-font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.card-title>h1 {
+    margin-bottom: 25px;
+}
+
+.card-title>h1>span {
+    color: var(--purple);
+}
+
+.card-img {
+    height: 100%;
+    width: 50%;
+    /* background-color: var(--purple); */
+    /* border: 10px solid yellow; */
+}
+
+.card-img>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+
+}
+
+.card-info {
+    display: flex;
+    gap: 25px;
+
 }
